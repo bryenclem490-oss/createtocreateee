@@ -37,10 +37,9 @@ $project = $stmt->fetchAll();
 </td>
 <td><?= htmlspecialchars($project['dibuatpada']) ?></td>
 <td>
- <a href="edit.php?id=<?= (int) $project['id'] ?>"> </a>
  <form method="post" action="hapus-project.php" style="display:inline"
  onsubmit="return confirm('Update project ini?');">
- <input type="hidden" name="id" value="<?= $project['id'] ?>">
+ <input type="hidden" name="id" value="<?= (int) $project['id'] ?>">
  <button type="submit">Update</button>
  </form>
 </td>
