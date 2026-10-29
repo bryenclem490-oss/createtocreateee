@@ -23,7 +23,7 @@ if (!$project) {
 </head>
 <body>
  <h1>Edit Project</h1>
- <form method="post" action="update-project.php">
+ <form method="post" action="applyedit.php">
  <input type="hidden" name="id" value="<?= $project['id'] ?>">
  <p>
  <label>Judul<br>
